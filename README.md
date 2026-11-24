@@ -28,8 +28,8 @@
 ## Установка
 
 ```bash
-git clone https://github.com/<username>/<repo>.git
-cd <repo>
+git clone https://github.com/rastrelpojopam-cmyk/Parser_of_Site.git
+cd Parser_of_Site
 
 python3 -m venv .venv
 source .venv/bin/activate
