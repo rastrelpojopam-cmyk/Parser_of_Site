@@ -1,0 +1,42 @@
+defaults:
+  mode: "httpx"
+  workers: 3
+  delay: 0.5
+  rotate_ua: true
+  timeout: 15.0
+
+presets:
+  books_to_scrape:
+    name: "Books to Scrape"
+    description: "Каталог книг (тестовый сайт books.toscrape.com)"
+    item_selector: "article.product_pod"
+    fields:
+      title: "h3 a::attr(title)"
+      price: ".price_color::text"
+      availability: ".availability::text"
+      rating: "p.star-rating::attr(class)"
+      link: "h3 a::attr(href)"
+
+  quotes_to_scrape:
+    name: "Quotes to Scrape"
+    description: "Цитаты известных людей (quotes.toscrape.com)"
+    item_selector: "div.quote"
+    fields:
+      text: "span.text::text"
+      author: "small.author::text"
+      tags: "div.tags a.tag::text"
+
+  hacker_news:
+    name: "Hacker News"
+    description: "Новости Hacker News (news.ycombinator.com)"
+    item_selector: "tr.athing"
+    fields:
+      title: "span.titleline > a::text"
+      link: "span.titleline > a::attr(href)"
+      site: "span.sitestr::text"
+
+  custom:
+    name: "Пользовательский"
+    description: "Ручной ввод селекторов"
+    item_selector: ""
+    fields: {}
