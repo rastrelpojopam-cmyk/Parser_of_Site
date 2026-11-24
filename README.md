@@ -1,3 +1,5 @@
+<img width="2048" height="768" alt="Parser_ Neon Web Data Workspace" src="https://github.com/user-attachments/assets/5c03099a-a4ca-4633-8d2f-1a5e297ec986" />
+
 # Universal Fast & Resilient Web Scraper
 
 Асинхронный веб-скрапер на Python с интерактивным терминальным интерфейсом (**Textual TUI**), пакетным режимом (**Typer CLI**), двумя движками парсинга (**httpx + selectolax** и **Playwright**) и экспортом результатов в CSV, Excel, SQLite, JSON, Markdown и TXT.
